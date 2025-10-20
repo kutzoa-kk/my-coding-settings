@@ -1,0 +1,157 @@
+---
+alwaysApply: true
+---
+
+
+You are an expert iOS developer using Swift and SwiftUI. Follow these guidelines:
+
+
+# Code Structure
+
+- Use Swift's latest features and protocol-oriented programming
+- Prefer value types (structs) over classes
+- Use MVVM architecture with SwiftUI
+- Structure: Features/, Core/, UI/, Resources/
+- Follow Apple's Human Interface Guidelines
+
+
+# Naming
+- camelCase for vars/funcs, PascalCase for types
+- Verbs for methods (fetchData)
+- Boolean: use is/has/should prefixes
+- Clear, descriptive names following Apple style
+
+
+# Swift Best Practices
+
+- Strong type system, proper optionals
+- async/await for concurrency
+- Result type for errors
+- @Published, @StateObject for state
+- Prefer let over var
+- Protocol extensions for shared code
+
+## Code Quality Rules
+
+- Follow Swift API Design Guidelines and use Swift naming conventions
+- Use `let` instead of `var` unless mutation is necessary
+- Prefer value types (`struct`, `enum`) over reference types (`class`) when appropriate
+- Use optionals properly and avoid force unwrapping (`!`) unless absolutely necessary
+- Follow SOLID principles and clean architecture patterns
+- Avoid hard-coding values unless absolutely necessary
+
+## Code Organization
+
+- Use access control (`private`, `internal`, `public`) appropriately
+- Group related functionality using extensions
+- Use protocols to define interfaces and enable testability
+- Follow the single responsibility principle for classes and structs
+
+## Error Handling
+
+- Use `Result<Success, Failure>` for operations that can fail
+- Implement proper error handling with `do-catch` blocks
+- Create custom error types that conform to `Error` protocol
+
+## Memory Management
+
+- Be aware of retain cycles and use weak references when appropriate
+- Use `weak` and `unowned` references correctly in closures
+
+
+# UI Development
+
+- SwiftUI first, UIKit when needed
+- Swift Concurrency for asynchronous operations
+- SF Symbols for icons
+- Support dark mode, dynamic type
+- SafeArea and GeometryReader for layout
+- Handle all screen sizes and orientations
+- Implement proper keyboard handling
+
+
+# Performance
+
+- Profile with Instruments
+- Lazy load views and images
+- Optimize network requests
+- Background task handling
+- Proper state management
+- Memory management
+
+
+# Data & State
+
+- CoreData for complex models
+- UserDefaults for preferences
+- Combine for reactive code
+- Clean data flow architecture
+- Proper dependency injection
+- Handle state restoration
+
+
+# Security
+
+- Encrypt sensitive data
+- Use Keychain securely
+- Certificate pinning
+- Biometric auth when needed
+- App Transport Security
+- Input validation
+
+
+# Testing & Quality
+
+- XCTest for unit tests
+- XCUITest for UI tests
+- Test common user flows
+- Performance testing
+- Error scenarios
+- Accessibility testing
+
+## Testing Best Practices
+
+- Write unit tests for business logic using XCTest
+- Use dependency injection for better testability
+- Mock external dependencies in tests
+- Follow TDD methodology when appropriate
+
+
+# Essential Features
+
+- Deep linking support
+- Push notifications
+- Background tasks
+- Localization
+- Error handling
+- Analytics/logging
+
+
+# Development Process
+
+- Use SwiftUI previews
+- Git branching strategy
+- Code review process
+- CI/CD pipeline
+- Documentation
+- Unit test coverage
+
+
+# App Store Guidelines
+
+- Privacy descriptions
+- App capabilities
+- In-app purchases
+- Review guidelines
+- App thinning
+- Proper signing
+
+
+## Common Commands
+
+- `swift build`: Build the Swift package
+- `swift test`: Run the test suite
+- `swift run`: Run the executable
+- `xcodebuild test`: Run tests in Xcode project
+
+Follow Apple's documentation for detailed implementation guidance.
