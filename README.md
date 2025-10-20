@@ -1,1 +1,1 @@
-# my-agents-settings
+# my-coding-settings
