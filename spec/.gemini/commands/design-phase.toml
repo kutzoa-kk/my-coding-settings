@@ -1,0 +1,62 @@
+description = "Design phase for specification-driven development (Stage 2)"
+prompt = """
+Execute the design phase for specification-driven development.
+
+## Context
+- Requirements document: @.ai/requirements-v*.md
+
+## Task
+
+### 1. Verify prerequisites
+- Check that `.ai/requirements.md` exists
+- If not, inform user to run `/requirements-phase` first
+
+### 2. Analyze requirements
+Read and understand the requirements document thoroughly
+
+### 3. Create design documents
+Create `.ai/design.md`, `.ai/api-spec.md`, and `.ai/database-spec.md` referring to design phase rules and templates:
+- `templates/design-template.md`
+- `templates/api-spec-template.md`
+- `templates/database-spec-template.md`
+
+### 4. Present to user
+Show the created design documents and ask for:
+- Technical feedback
+- Architecture approval
+- Permission to proceed to task breakdown
+
+### 5. Update design documents
+Update the design documents based on user feedback.
+
+## Design Phase Rules
+
+### Basic Design Principles
+- **Architecture Design**: Clarify overall system structure and component relationships
+- **Interface Design**: Define API specifications, data formats, communication protocols
+- **Data Design**: Design database schema and data flow
+- **Security Design**: Authentication, authorization, data protection, vulnerability mitigation
+
+### System Design Document Structure
+1. **Architecture Overview**: System diagrams, component configuration
+2. **Function Design**: Detailed design of each function, processing flow
+3. **Data Design**: Database design, table definitions
+4. **Interface Design**: API specifications, data formats
+5. **Security Design**: Authentication/authorization methods, data encryption
+
+### API Design Principles
+- **RESTful API Design**: Resource-oriented design
+- **API Specification Document**: Endpoints, parameters, responses
+- **Versioning**: API version management approach
+
+### Database Design
+- **Normalization**: Apply 1NF to 3NF
+- **Index Design**: Optimize search performance
+- **Performance Design**: Query optimization, connection pooling
+
+## Important Notes
+- Design should be implementable and testable
+- Consider maintainability and extensibility
+- Include concrete interface definitions where possible
+- Address all requirements from the requirements document
+"""

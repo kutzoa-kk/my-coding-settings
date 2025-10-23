@@ -1,0 +1,72 @@
+description = "Implementation plan phase for specification-driven development (Stage 3)"
+prompt = """
+Execute the implementation plan phase for specification-driven development.
+
+## Context
+- Requirements: @.ai/requirements.md
+- Design documents: @.ai/design.md, @.ai/api-spec.md, @.ai/database-spec.md
+
+## Task
+
+### 1. Verify prerequisites
+- Check that `.ai/requirements.md`, `.ai/design.md`, `.ai/api-spec.md`, and `.ai/database-spec.md` all exist
+- If not, inform user to complete previous stages first
+
+### 2. Analyze design documents
+Read and understand the design thoroughly to identify all implementation tasks
+
+### 3. Create task list documents
+Create `.ai/plan.md` and `.ai/tasks/task-spec-*.md` referring to `templates/implementation-plan-template.md`:
+- `.ai/plan.md` - List of implementation tasks
+- `.ai/tasks/task-spec-*.md` - Specification of each task
+
+### 4. Present to user
+Show the task breakdown and ask for:
+- Confirmation of understanding
+- Any missing tasks
+- Approval to proceed to implementation
+
+### 5. Update task list documents
+Update the task list documents based on user feedback.
+
+## Implementation Plan Phase Rules
+
+### Basic Principles
+- **Task Decomposition**: Break down by functional units
+- **Implementation Order**: Determine order based on dependencies
+- **Risk Management**: Identify and address technical risks
+
+### Task Decomposition Methods
+- Tasks should be commit-sized (completable in 1-4 hours)
+- Include clear completion criteria for each task
+- Consider parallel execution opportunities
+- Include testing tasks throughout, not just at the end
+
+### Dependency Management
+- **Technical Dependencies**: Database design → API development → UI development
+- **Business Dependencies**: User registration → Login functionality
+- **Resource Dependencies**: Developer expertise
+
+### Estimation Techniques
+- Estimation based on past performance data
+- Three-point estimation (optimistic, realistic, pessimistic)
+- Function point method, story point method
+
+### Risk Management
+- **Technical Risks**: New technology adoption risks, performance requirement achievement risks
+- **Schedule Risks**: Estimation errors, impact of specification changes
+- **Countermeasure Preparation**: Alternative technology consideration, feature priority changes
+
+### Implementation Plan Document Structure
+1. **Project Overview**: Purpose, scope, constraints
+2. **Task List**: Task name, description, deliverables, effort estimation
+3. **Schedule**: Gantt chart, milestones
+4. **Resource Planning**: Personnel allocation, skill requirements
+5. **Quality Management**: Test planning, review planning
+
+## Important Notes
+- Verify appropriateness of task decomposition
+- Ensure accuracy of dependencies
+- Validate reasonableness of effort estimation
+- Confirm appropriateness of risk assessment
+"""

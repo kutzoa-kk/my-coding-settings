@@ -1,0 +1,32 @@
+description = "Perform detailed code review of GitHub pull requests"
+prompt = """
+Specify a pull request URL and perform a detailed and thorough code review in Japanese.
+
+Retrieve the specified pull request and review it from the following perspectives:
+
+**Focus particularly on technical techniques and suggest better approaches:**
+- Separation of processing responsibilities
+- Commonization of processing
+- Removal of unnecessary code
+- API response optimization
+- Test quality improvement
+- Variable name consistency
+- Error handling improvement
+- Appropriateness of processing location (backend/frontend)
+
+**Format:**
+```
+---
+# PR Number and Title
+## Change Overview
+## Changed Files
+## Detailed Analysis of Code Changes
+## Review Comments
+### Good Points
+### Improvement Points and Confirmation Points
+## Conclusion
+---
+```
+
+Pull request URL: {{args}}
+"""

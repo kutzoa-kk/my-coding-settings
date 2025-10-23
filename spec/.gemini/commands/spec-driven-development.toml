@@ -1,0 +1,100 @@
+description = "Complete specification-driven development workflow"
+prompt = """
+Execute the complete specification-driven development workflow.
+
+## Context
+- Task description: {{args}}
+
+## Workflow Overview
+
+This command executes all four stages of specification-driven development:
+
+1. **Requirements Phase** (`/requirements-phase`) - Define requirements
+2. **Design Phase** (`/design-phase`) - Create design specifications
+3. **Implementation Plan Phase** (`/implementation-plan-phase`) - Break down into tasks
+4. **Implementation Phase** (`/implementation-phase`) - Execute implementation
+
+## Basic Principles
+
+### Understanding of LLM's Nature
+- LLM is a "statistical pattern recognition system" and cannot understand or create like humans
+- It is based on statistical patterns learned from vast text data and predicts the most likely next string
+- "Vibes" instructions will fail, so you need to provide clear and specific specification documents
+
+### Human and AI Role Separation
+- **AI**: Create specification documents, design documents, and implementation plan documents
+- **Human**: Review, make decisions, ensure quality, and approve the final result
+
+## Phase-Specific Rules
+
+### 1. Requirements Definition Phase
+- Execute `/requirements-phase` to define requirements
+- Create detailed specifications for functional requirements, non-functional requirements, and constraints
+- Avoid ambiguous expressions, describe specific and measurable requirements
+- Clearly define acceptance criteria
+- Create `.ai/requirements.md`
+
+### 2. Design Phase
+- Execute `/design-phase` to perform design
+- Create system design documents, API design documents, database design documents, and architecture diagrams
+- Cover architecture, interface, data design, and security
+- Consider maintainability and extensibility in design
+- Create `.ai/design.md`
+
+### 3. Implementation Plan Phase
+- Execute `/implementation-plan-phase` to create implementation plan
+- Task decomposition, implementation order, dependency organization
+- Effort estimation, risk assessment, priority adjustment
+- Create implementation plan documents, task lists, milestones
+- Create `.ai/plan.md` and `.ai/tasks/task-spec-*.md`
+
+### 4. Implementation Phase
+- Execute `/implementation-phase` to perform implementation
+- Specific code implementation
+- Create test code and documentation
+- Verify code quality, performance, and security
+- Implement according to `.ai/plan.md` and `.ai/tasks/task-spec-*.md` and update them
+
+## Quality Management
+
+### Requirements Document Quality Criteria
+- **Clarity**: Descriptions that can be understood by anyone
+- **Completeness**: All necessary information is included
+- **Consistency**: Uniformity of terms, descriptions, and logical structure
+- **Verifiability**: The implementation result can be verified against the requirements
+
+### Review Checklist
+- [ ] Completeness and consistency of requirements
+- [ ] Technical feasibility
+- [ ] Meeting security requirements
+- [ ] Meeting performance requirements
+- [ ] Maintainability and extensibility
+- [ ] Reasonableness of cost and effort
+
+## Tool Utilization
+
+### Utilization of Context7 MCP
+- Always use when retrieving latest information about libraries
+- Verify and validate technical specifications
+- Research best practices
+
+### Utilization of Memory Bank
+Execute `@memory-bank` to use the memory bank.
+
+### Utilization of Parallel Processing
+- Execute multiple independent tasks in parallel
+- Parallelize specification creation and review
+- Simultaneous design of multiple components
+
+## Important Notes
+
+- Each stage depends on the deliverables of the previous stage
+- Please obtain user confirmation before proceeding to the next stage
+- Always use this workflow for complex tasks or new feature development
+- Simple fixes or clear bug fixes can be implemented directly
+
+1. **Clear Specification Document**: Provide a clear and specific specification document instead of vague "Vibes"
+2. **Stage-by-Stage Verification**: Review the results of each phase early to find problems
+3. **Human Judgment**: Do not blindly trust AI proposals, use human knowledge and experience to make the final decision
+4. **Continuous Improvement**: Update and improve the specification document according to the progress of the project
+"""

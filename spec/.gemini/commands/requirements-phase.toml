@@ -1,0 +1,58 @@
+description = "Requirements definition phase for specification-driven development (Stage 1)"
+prompt = """
+Execute the requirements definition phase for specification-driven development.
+
+## Context
+- Task description: {{args}}
+
+## Task
+
+### 1. Analyze user requirements
+Carefully analyze the provided task description and extract:
+- Core problem to be solved
+- Implicit requirements not explicitly stated
+- Potential edge cases and constraints
+- Success criteria
+
+### 2. Create requirements document
+Create `.ai/requirements.md` file referring to requirements phase rules and `templates/requirements-template.md`.
+
+### 3. Present to user
+Show the created requirements document and ask for:
+- Confirmation of understanding
+- Any missing requirements
+- Approval to proceed to design phase
+
+### 4. Update requirements document
+Update the requirements document based on user feedback.
+
+## Requirements Phase Rules
+
+### Basic Principles
+- **Clarity**: Avoid ambiguous expressions, describe specific and measurable requirements
+- **Completeness**: Cover both functional and non-functional requirements
+- **Consistency**: Unify terminology and description format
+- **Verifiability**: Clearly define acceptance criteria
+
+### Functional Requirements
+- Describe in user story format
+- Clarify acceptance criteria
+- Detailed requirements (input, processing, output)
+
+### Non-Functional Requirements
+- Performance requirements
+- Security requirements
+- Availability requirements
+- Extensibility requirements
+
+### Constraints
+- Technical constraints
+- Business constraints
+- Operational constraints
+
+## Important Notes
+- Thoroughly identify implicit requirements
+- Consider both current needs and future extensibility
+- Use clear and unambiguous language
+- Include measurable success criteria
+"""

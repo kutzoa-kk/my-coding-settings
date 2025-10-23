@@ -1,0 +1,13 @@
+description = "Execute web search using Gemini CLI"
+prompt = """
+Execute web search using Gemini CLI.
+
+Command: /search [search keywords]
+
+Follow these steps:
+1. Narrow down the received search keywords to 2-3 items
+2. Execute `gemini -p 'google_web_search:[search keywords]'` command using Bash tool
+3. Analyze search results and provide relevant information
+
+Make search keywords concise and effective.
+"""

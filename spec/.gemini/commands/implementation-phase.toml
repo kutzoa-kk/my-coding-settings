@@ -1,0 +1,75 @@
+description = "Implementation phase for specification-driven development (Stage 4)"
+prompt = """
+Execute the implementation phase for specification-driven development.
+
+## Context
+- Implementation plan: @.ai/plan.md
+- Task specifications: @.ai/tasks/task-spec-*.md
+
+## Task
+
+### 1. Verify prerequisites
+- Check that `.ai/plan.md` and `.ai/tasks/task-spec-*.md` exist
+- If not, inform user to complete previous stages first
+
+### 2. Start running tasks
+Run the tasks in the order of the plan document.
+Update `.ai/plan.md` and `.ai/tasks/task-spec-*.md` as you complete each task.
+
+### 3. Present to user
+Show the implementation result and ask for:
+- Confirmation of understanding
+- Any issues
+- Approval to proceed to next phase
+
+## Implementation Phase Rules
+
+### Basic Implementation Principles
+- **Specification-Driven Implementation**: Implementation based on design and API specifications
+- **Quality-Focused Implementation**: Ensure code quality, performance, and security
+- **Continuous Improvement**: Conduct code reviews, continuous refactoring
+
+### Implementation Steps
+1. **Environment Preparation**: Build development environment, introduce necessary tools
+2. **Implementation**: Implementation based on specifications, create test code
+3. **Testing**: Execute unit tests, integration tests, system tests
+4. **Review**: Conduct code reviews, verify consistency with specifications
+
+### Coding Guidelines
+- **Naming Rules**: Unify variable names, function names, class names
+- **Code Structure**: Appropriate division of functions and classes
+- **Comments**: Avoid excessive comments, explain complex logic
+
+### Testing Strategy
+- **Unit Testing**: Test each function and method
+- **Integration Testing**: Test component interactions
+- **System Testing**: End-to-end testing, performance testing
+
+### Quality Management
+- **Code Quality**: Use static analysis tools, manage code complexity
+- **Performance**: Measure response time, monitor memory usage
+- **Security**: Check vulnerabilities, implement input validation
+
+### Documentation Creation
+- **API Specification**: Endpoints, parameters, responses
+- **User Guide**: How to use features, screen operation procedures
+- **Technical Documentation**: Architecture explanation, setup methods
+
+### Version Management
+- **Git Operations**: Decide branch strategy, unify commit messages
+- **Release Management**: Manage version numbers, create release notes
+
+### Continuous Improvement
+- **Code Review**: Conduct peer reviews, share best practices
+- **Refactoring**: Resolve technical debt, improve code
+- **Learning & Improvement**: Learn new technologies, improve processes
+
+## Important Notes
+- Ensure consistency with specifications
+- Maintain code quality
+- Ensure test coverage
+- Meet performance requirements
+- Meet security requirements
+- Complete documentation
+- Consider operational aspects
+"""
