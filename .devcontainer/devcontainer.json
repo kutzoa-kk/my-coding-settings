@@ -1,0 +1,16 @@
+{
+    "name": "Gemini CLI Dev Container",
+    "service": "dvc-gemini",
+    "dockerComposeFile": "../docker/compose.yml",
+    "workspaceFolder": "/home/docker/workspace",
+    "customizations": {
+        "vscode": {
+            "settings": {
+				"terminal.integrated.defaultProfile.linux": "bash"
+			},
+            "extensions": [
+                "google.gemini-code-assist"
+            ]
+        }
+    }
+}
