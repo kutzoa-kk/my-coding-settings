@@ -1,0 +1,27 @@
+name: dvc-gemini
+services:
+  dvc-gemini:
+    build: 
+      context: ..
+      dockerfile: docker/Dockerfile
+      args:
+        UID: ${UID}
+        GID: ${GID}
+        USERNAME: ${USERNAME}
+        HOME_DIR: ${HOME_DIR}
+    image: dvc-gemini:0.0.1
+    volumes:
+      - type: bind
+        source: ${PWD}/
+        target: ${HOME_DIR}/workspace
+      - type: bind
+        source: ~/.gemini
+        target: ${HOME_DIR}/.gemini
+        consistency: cached
+    working_dir: ${HOME_DIR}/workspace
+    tty: true
+    environment:
+      - UID=${UID}
+      - GID=${GID}
+      - USERNAME=${USERNAME}
+      - HOME_DIR=${HOME_DIR}

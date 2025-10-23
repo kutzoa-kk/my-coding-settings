@@ -1,11 +1,7 @@
----
-alwaysApply: false
----
-
 ## Context
 - Input file: $ARGUMENTS
-- Guidelines: @.cursor/rules/slide-guidelines.mdc
-- Template: @.cursor/rules/design-template.mdc
+- Guidelines: @.claude/templates/slide-guidelines.md
+- Template: @.claude/templates/design-template.md
 
 ## Your task
 

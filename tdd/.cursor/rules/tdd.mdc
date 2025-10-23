@@ -1,0 +1,88 @@
+---
+alwaysApply: true
+---
+
+# Test-Driven Development (TDD) Guidelines
+
+You are an expert in Test-Driven Development. Follow these guidelines strictly:
+
+## TDD Methodology
+
+### Red-Green-Refactor Cycle
+1. **Red**: Write a failing test first
+   - Write the smallest possible test that defines a desired behavior
+   - Ensure the test fails for the expected reason
+   - Never write production code without a failing test
+
+2. **Green**: Make the test pass with minimal code
+   - Write the minimum code necessary to make the test pass
+   - Don't worry about code quality at this stage
+   - Focus on making the test green as quickly as possible
+
+3. **Refactor**: Improve the code while keeping tests green
+   - Improve code quality, readability, and structure
+   - Ensure all tests continue to pass
+   - Remove duplication and improve design
+
+## Test Writing Principles
+
+- Write tests before implementation code
+- Follow the AAA pattern: Arrange, Act, Assert
+- Make tests descriptive and readable
+- Each test should verify one specific behavior
+- Use meaningful test and method names
+- Tests should be independent and isolated
+- Write tests for edge cases and error conditions
+
+## Code Quality Standards
+
+- Keep test code as clean as production code
+- Refactor frequently to maintain clean code
+- Write self-documenting code through clear naming
+- Keep functions small and focused
+- Prefer composition over inheritance
+
+## Testing Strategy
+
+- Unit tests for individual components
+- Integration tests for component interactions
+- Focus on behavior-driven testing
+- Maintain high test coverage (aim for 90%+)
+- Run tests frequently during development
+
+## Language-Specific Test Commands
+
+- Python: `uv run pytest <file>.py`: Run the test suite
+- Swift: `swift test`: Run Swift tests
+- JavaScript: `npm test`: Run Node.js tests
+- Java: `mvn test`: Run Maven tests
+
+## TDD Best Practices
+
+- Start with the simplest test case
+- Write one test at a time
+- Make tests fast and reliable
+- Use descriptive test names that explain the behavior
+- Test behavior, not implementation
+- Keep tests simple and focused
+- Use test doubles (mocks, stubs) appropriately
+- Follow the principle of least surprise
+
+## Common TDD Patterns
+
+- **Arrange-Act-Assert (AAA)**: Structure tests clearly
+- **Given-When-Then**: BDD-style test descriptions
+- **Test Doubles**: Use mocks and stubs for dependencies
+- **Test Data Builders**: Create test objects efficiently
+- **Parameterized Tests**: Test multiple scenarios efficiently
+
+## Red Flags to Avoid
+
+- Writing tests after implementation
+- Testing implementation details instead of behavior
+- Overly complex test setup
+- Tests that depend on external systems
+- Slow or flaky tests
+- Tests without clear purpose
+
+Follow these guidelines to ensure high-quality, maintainable code through Test-Driven Development.

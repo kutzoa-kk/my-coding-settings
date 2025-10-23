@@ -1,8 +1,3 @@
----
-description: "Slide Simplification Design Template for Marp"
-alwaysApply: false
----
-
 # Slide Simplification Guidelines
 
 ## Core Principles

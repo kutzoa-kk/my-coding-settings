@@ -65,4 +65,13 @@ uv remove package-name --script script.py
 # Reinstall all script dependencies from lock file
 uv sync --script script.py
 ```
-    
+
+
+**🔁 Format**
+- `uv run ruff format .`: Apply code formatting
+
+**🔁 Lint**
+- `uv run ruff check .`: Run the code linting
+
+**🔁 Test**
+- `uv run pytest <file>.py`: Run the test suite
