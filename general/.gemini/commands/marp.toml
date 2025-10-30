@@ -5,7 +5,7 @@ Convert markdown files to PDF using Marp CLI.
 ## Context
 - Input file: {{args}}
 - Guidelines: @.claude/templates/slide-guidelines.md
-- Template: @.claude/templates/design-template.md
+- Template: @.claude/templates/slide-design-template.md
 
 ## Task
 

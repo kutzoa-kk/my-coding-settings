@@ -1,7 +1,7 @@
 ## Context
 - Input file: $ARGUMENTS
 - Guidelines: @.claude/templates/slide-guidelines.md
-- Template: @.claude/templates/design-template.md
+- Template: @.claude/templates/slide-design-template.md
 
 ## Your task
 

@@ -53,7 +53,7 @@ You are an expert in Test-Driven Development. Follow these guidelines strictly:
 ## Language-Specific Test Commands
 
 - Python: `uv run pytest <file>.py`: Run the test suite
-- Swift: `swift test`: Run Swift tests
+- Swift: `swift test --enable-testing`: Run SwiftTesting tests
 - JavaScript: `npm test`: Run Node.js tests
 - Java: `mvn test`: Run Maven tests
 

@@ -102,7 +102,7 @@ You are an expert iOS developer using Swift and SwiftUI. Follow these guidelines
 
 # Testing & Quality
 
-- XCTest for unit tests
+- SwiftTesting for unit tests
 - XCUITest for UI tests
 - Test common user flows
 - Performance testing
@@ -111,7 +111,7 @@ You are an expert iOS developer using Swift and SwiftUI. Follow these guidelines
 
 ## Testing Best Practices
 
-- Write unit tests for business logic using XCTest
+- Write unit tests for business logic using SwiftTesting
 - Use dependency injection for better testability
 - Mock external dependencies in tests
 - Follow TDD methodology when appropriate
@@ -153,5 +153,6 @@ You are an expert iOS developer using Swift and SwiftUI. Follow these guidelines
 - `swift test`: Run the test suite
 - `swift run`: Run the executable
 - `xcodebuild test`: Run tests in Xcode project
+- `swift test --enable-testing`: Run SwiftTesting tests
 
 Follow Apple's documentation for detailed implementation guidance.

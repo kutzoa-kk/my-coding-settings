@@ -26,6 +26,7 @@ Show the implementation result and ask for:
 - Confirmation of understanding
 - Any issues
 - Approval to proceed to next phase
+- If Completed, mark the task as completed.
 
 ## Important Notes
 

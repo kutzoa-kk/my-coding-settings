@@ -16,7 +16,9 @@ This document defines the project's rules, objectives, and progress management m
 
 ## Programming Rules
 
+
 - Avoid hard-coding values unless absolutely necessary.
+- **Do not suppress errors using try-catch-except statements.**
 
 ## Markdown Rules
 
